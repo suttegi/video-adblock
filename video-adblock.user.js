@@ -1,6 +1,6 @@
 // ==UserScript==
-// @name         HDRezka mirror: ad cleaner v3
-// @match        *://wandavision-hdrezka.net/*
+// @name         Video player ad cleaner
+// @match        *://*/*
 // @run-at       document-start
 // @grant        none
 // ==/UserScript==
@@ -35,7 +35,7 @@
     return isAd(s) || /\.(png|jpe?g|gif|webp)(\?|#|$)/i.test(s);
   }
 
-  console.log(TAG, 'v3 старт, readyState =', document.readyState);
+  console.log(TAG, 'старт, readyState =', document.readyState);
 
   function patchWindow(w, label) {
     try {
